@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>LoginSystem</title>
+</head>
+<body>
+    <div class="container-md">
+        <h2 id="heading">Login</h2>
+        <form action="backend/Login.php" method="POST" id="main-form">
+            <div id="form">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
+                    </div>
+                    <input type="text" name="uname" id="uname" onkeyup="check_name(this.value)" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="alert alert-danger username" role="alert">
+                    Username already Exists!Try another or Login
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Password</span>
+                    </div>
+                    <input type="password" name="pass" id="pass" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+            <input type="number" name="switch" value="1" id="binValue" hidden>
+            <div class="changeBtn">
+                <input type="button" id="toggleBtn" class="plainBtn" onClick="change()"value="Not Registered yet,Please Register!"/>
+            </div>
+            <div class="loginButton">
+                <button type="submit" id="submitBtn" class="btn btn-primary">Signin</button>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="script/app.js"></script>
+</body>
+</html>

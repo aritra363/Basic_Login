@@ -1,0 +1,42 @@
+.container-md {
+    margin-top: 40px;
+    box-shadow:  0 0 4px rgba(0,0,0,0.5);
+    padding:20px 40px;
+    border-radius: 15px;
+}
+h2{
+    text-align: center;
+}
+.loginButton {
+    margin: 0 auto;
+    width:fit-content;
+}
+button.btn.btn-primary{
+    padding-left:5rem;
+    padding-right:5rem;
+}
+.show {
+    display:none;
+}
+.plainBtn {
+    border:none;
+    background-color: transparent;
+    outline: none;
+}
+.plainBtn:hover {
+    color: slategray;
+}
+.changeBtn {
+    text-align: right;
+}
+.cnfPassword {
+    display:none;
+}
+.username {
+    display:none;
+}
+@media(max-width:930px) {
+    .container-md {
+        height: 400px;
+    }
+}
